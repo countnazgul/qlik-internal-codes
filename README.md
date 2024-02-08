@@ -1,5 +1,7 @@
-# qlik-internal-codes
-List of hard to find Qlik internal codes and their description
+List of hard to find Qlik internal codes and their description.
+
+The data source is a few years old so it is quite possible that this list is incomplete. But it does contains a lot more codes that I have encountered :)
+
 
 |Type           |Code  |Value                                                                                                                                                                                                                        |Comment                                                                                                                                                                                                                                                                          |
 |---------------|------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
