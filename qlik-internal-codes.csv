@@ -4,6 +4,7 @@ Reload,-32603,Internal JSON protocol error,Internal error when setting up a requ
 Reload,-32602,Invalid JSON protocol parameters,Wrong parameters specified in a json request to engine. Do Not translate [JSON]. JSON stands for JavaScript Object Notation 
 Reload,-32601,Requested protocol method does not exist,"Requested protol method does not exist in engines API, could be wrong spelling"
 Reload,-32600,Invalid JSON protocol request,Something went wrong when handling a request. Do Not translate [JSON]. JSON stands for JavaScript Object Notation 
+Reload,-129,Internal engine error,Something went wrong internally inside the engine. Likely low on resources (RAM).
 Reload,-128,Internal engine error,Something went wrong internally inside the engine. Likely a memory access violation.
 Reload,-65,The request to the QBDI cluster failed,"Generic message for any error on the BDI side, causing the request from the engine to BDI cluster to fail."
 Reload,-1,Unknown error,Generic message for e.g. when the session has been killed or cannot be initialized due to unknown reasons.
@@ -42,7 +43,7 @@ Reload,411,The content length of the request is required.,HTTP standardized erro
 Reload,412,The precondition has failed.,HTTP standardized error code; The server does not meet one of the preconditions that the requester put on the request.
 Reload,413,The request entity is too large.,HTTP standardized error code
 Reload,414,The request URL is too long.,HTTP standardized error code
-Reload,415,"The request entity's media type is not supported.",HTTP standardized error code
+Reload,415,The request entity's media type is not supported.,HTTP standardized error code
 Reload,416,The requested range is not satisfiable.,"HTTP standardized error code; The client has asked for a portion of the file, but the server cannot supply that portion"
 Reload,417,Expectation failed,HTTP standardized error code
 Reload,500,Internal server error,"HTTP standardized error code; generic error message, no specific message is suitable."
@@ -67,7 +68,7 @@ Reload,1010,The migration service could not be started.,Showed in Qlik Sense whe
 Reload,1011,The app migration could not be started.,Shown when an app migration could not be started
 Reload,1012,App migration failed. Check the logs for more details.,Showed in Qlik Sense when an app migration failed
 Reload,1013,App reload failed. Synchronization of the app is in progress.,Happens when reloading of an app on the RIM node is triggered but the script is not yet synced
-Reload,1014,App export failed.,"Shown when attempting to export and reduce an app. Likely cause: not possible to reduce the app's current state."
+Reload,1014,App export failed.,Shown when attempting to export and reduce an app. Likely cause: not possible to reduce the app's current state.
 Reload,2000,Connection with the given name already exists.,Happens when CreateConnection or ModifyConnection is called and given connection name is not unique
 Reload,2001,Connection not found.,"Happens when GetConnection, GetConnectionInfo, ModifyConnection is called and given connection name could not be found"
 Reload,2002,Failed to load connection.,Happens upon load of an application in QvNext and we could not load all referenced connections in the app
@@ -84,6 +85,7 @@ Reload,3005,The file was opened in an unsupported mode. Apps with the qvw suffix
 Reload,3006,No table found in the HTML file.,Shown when importing an HTML-file without a table
 Reload,4000,You cannot access the requested resource.,No access to a resource for the given user
 Reload,4001,The system failed to log you in.,"OpenDoc, if Username is all in hexagonal digits, validation is made and this impersonation can fail"
+Reload,4003,Operation aborted,
 Reload,5000,Server has no more session and usage Client Access Licences.,"License check on OpenDoc on classic server, if the server is out of slots and the engine build number is less than 3068. "
 Reload,5001,Server has no more session Client Access Licences.,"License check on OpenDoc  on classic server, if server is out session cals"
 Reload,5002,Server has no more usage Client Access Licences.,"License check on OpenDoc on classic server, if server is out usage cals"
@@ -131,32 +133,32 @@ Reload,9510,Invalid parameter sent from the repository in the binary sync protoc
 Reload,9511,Invalid parameter sent from the repository in the binary sync protocol,Do not translate. Related to Get Chunk. This error code is only used internally
 Reload,10000,You do not have access to the data source.,Access rights problems on create new ODBC/OLEDB connection
 Reload,11000,Reload in progress.,A reload request from another connection in the same session is currently being processed.
-Reload,11001,"The following table could not be found: '{0}'. Correct the reference to the table and reload the script.",An error message for when a table named in a script cannot be found.
-Reload,11002,"The following statement could not be identified: '{0}'. Correct the syntax of this statement and reload the script.",An error message for when the engine cannot figure out what statement type was intended due to a syntax error.
-Reload,11003,"There is a syntax problem with the following script element: '{0}'.  Correct the syntax and reload the script.",An error message for when the engine finds a script element
+Reload,11001,The following table could not be found: '{0}'. Correct the reference to the table and reload the script.,An error message for when a table named in a script cannot be found.
+Reload,11002,The following statement could not be identified: '{0}'. Correct the syntax of this statement and reload the script.,An error message for when the engine cannot figure out what statement type was intended due to a syntax error.
+Reload,11003,There is a syntax problem with the following script element: '{0}'.  Correct the syntax and reload the script.,An error message for when the engine finds a script element
 Reload,11004,"The engine expected nothing, but found the following script element: '{0}'. Correct the syntax and reload the script.",An error message for when the engine finds a script element
-Reload,11005,"The engine found the following script element: '{0}'. The following script element was expected: '{1}'. Correct the syntax and reload the script.",An error message for when the engine finds a script element
-Reload,11006,"The engine found the following script element: '{0}'. One of the following script elements was expected: '{1}' or  '{2}'. Correct the syntax and reload the script.",An error message for when the engine finds a script element
+Reload,11005,The engine found the following script element: '{0}'. The following script element was expected: '{1}'. Correct the syntax and reload the script.,An error message for when the engine finds a script element
+Reload,11006,The engine found the following script element: '{0}'. One of the following script elements was expected: '{1}' or  '{2}'. Correct the syntax and reload the script.,An error message for when the engine finds a script element
 Reload,11007,"The engine found the following script element: '{0}'. One of the following script elements was expected: '{1}', '{2}', or '{3}'. Correct the syntax and reload the script.",An error message for when the engine finds a script element
 Reload,11008,"The engine found the following script element: '{0}'. One of the following script elements was expected: '{1}', '{2}', '{3}', or '{4}'. Correct the syntax and reload the script.",An error message for when the engine finds a script element
 Reload,11009,"The engine found the following script element: '{0}'. One of the following script elements was expected: '{1}', '{2}', '{3}', '{4}', or '{5}'. Correct the syntax and reload the script.",An error message for when the engine finds a script element
 Reload,11010,"The engine found the following script element: '{0}'. One of the following script elements was expected: '{1}', '{2}', '{3}', '{4}', '{5}', or '{6}'. Correct the syntax and reload the script.",An error message for when the engine finds a script element
 Reload,11011,"The engine found the following script element: '{0}'. One of the following script elements was expected: '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', or '{7}'. Correct the syntax and reload the script.",An error message for when the engine finds a script element
 Reload,11012,"The engine found the following script element: '{0}'. Another script element was expected, such as: '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', or '{7}'. Correct the syntax and reload the script.",An error message for when the engine finds a script element
-Reload,11013,"The following field could not be found: '{0}'. Correct the reference to the field and reload the script.",An error message for when a field named in a script cannot be found.
-Reload,11014,"The following mapping table could not be found: '{0}'. Correct the reference to the mapping table and reload the script.",An error message for when a mapping table that was named in the script cannot be found.
-Reload,11015,"The following connection could not be found: '{0}'. Correct the reference to the connection and reload the script.",An error message for when a connection that was named in the script cannot.  From script like: LIB CONNECT TO [lib://database]
-Reload,11016,"This name already exists: '{0}'. Select a different name for the rename operation and reload the script.",An error message for when the name selected for a rename operation is already in use.
+Reload,11013,The following field could not be found: '{0}'. Correct the reference to the field and reload the script.,An error message for when a field named in a script cannot be found.
+Reload,11014,The following mapping table could not be found: '{0}'. Correct the reference to the mapping table and reload the script.,An error message for when a mapping table that was named in the script cannot be found.
+Reload,11015,The following connection could not be found: '{0}'. Correct the reference to the connection and reload the script.,An error message for when a connection that was named in the script cannot.  From script like: LIB CONNECT TO [lib://database]
+Reload,11016,This name already exists: '{0}'. Select a different name for the rename operation and reload the script.,An error message for when the name selected for a rename operation is already in use.
 Reload,11017,The file is in an incorrect format or may be damaged. Save the file in DIF format and reload the script.,An error message for when a DIF file is specified but the file it is pointing to is not in the DIF format or is too damaged to be recognized. Do not translate [DIF].
 Reload,11018,The file is in an incorrect format or may be damaged. Save the file in BIFF format and reload the script.,An error message for when a BIFF file is specified but the file it is pointing to is not in the BIFF format or is too damaged to be recognized. Do not translate [BIFF].
 Reload,11019,Cannot read an Excel file protected by passwords. Remove the password and reload the script.,An error message for when the excel file selected to load data from is password protected and inaccessible to Sense. Do not translate [Excel].
-Reload,11020,"Cannot open the following file: '{0}'. Check to confirm that the file is available and reload the script.","An error message for when a file is specified in a script, but cannot be opened due to the file not existing, the system not having the rights to open it, the file being already opened and locked by another program, or another cause of the file being made inaccessible."
-Reload,11021,"The following autogenerate number is incorrect: '{0}'. Autogenerate numbers cannot be negative numbers or greater than 2147483647. Correct the autogenerate number and reload the script.","An error message for when the autogenerate number, that is the number of records the autogenerate statement is generating, of a LOAD statement is invalid. Typically a negative number or too large like more than 2^31. Do not translate [autogenerate]"
+Reload,11020,Cannot open the following file: '{0}'. Check to confirm that the file is available and reload the script.,"An error message for when a file is specified in a script, but cannot be opened due to the file not existing, the system not having the rights to open it, the file being already opened and locked by another program, or another cause of the file being made inaccessible."
+Reload,11021,The following autogenerate number is incorrect: '{0}'. Autogenerate numbers cannot be negative numbers or greater than 2147483647. Correct the autogenerate number and reload the script.,"An error message for when the autogenerate number, that is the number of records the autogenerate statement is generating, of a LOAD statement is invalid. Typically a negative number or too large like more than 2^31. Do not translate [autogenerate]"
 Reload,11022,These LOAD statement prefixes cannot be combined. Remove the conflicting prefixes and reload.,"An error message for when a LOAD statement includes conflicting prefixes, such as JOIN and NONCONCATENATE. Do not translate [LOAD]"
 Reload,11023,The control statement does not match its corresponding start statement. Confirm that the start and end of the control statement are formatted correctly and reload.,"An error message for when a Control statement that has a start and end part, such as IF ... and the corresponding end if, does not have matching start and end parts."
 Reload,11024,"The following connection could not be found: {0}. Correct the reference to the connection or confirm you have access rights to this connection, and reload.",An error message for when the connection specified cannot be found.
 Reload,11025,The following connection is invalid: {0}.  Correct the reference to the connection and reload.,An error message for when the connection specified exists but something is wrong with its definition.
-Reload,11026,"The following path is outside the folder defined by the connection: '{0}'. Enter the complete path and reload the script.","An error message for when a path is probably using .. to escape the file system root, which is not allowed."
+Reload,11026,The following path is outside the folder defined by the connection: '{0}'. Enter the complete path and reload the script.,"An error message for when a path is probably using .. to escape the file system root, which is not allowed."
 Reload,11027,There is no qualified path for the following file: {0}. Save your QlikView document before using qualify statements.,An error message for when a path is missing a qualified path. This specific message will only come when using relative paths and the app/document is not saved
 Reload,11028,This statement only works with lib:// paths in standard mode. Change your statement to use a lib:// path and reload the script.,An error message for when LOAD is used with a path other than a Lib path in standard mode. Do not translate [lib://]
 Reload,11029,Inconsistent use of semantic fields. Correct the use of the semantic prefix and reload the script.,An error message for when semantic fields are used inconsistently. Do Not Translate [semantic].
@@ -195,7 +197,7 @@ Reload,16005,Detail field is not allowed with aggregated fields.,Error message. 
 Reload,16006,Synthetic keys are  not allowed in a Direct Discovery table. A Direct Discovery table cannot be part of a loop.,Error message. Note to translator: Do not translate [Direct Discovery].  
 Reload,16007,Only fields from a single Direct Discovery table are allowed.,"Error message. Note to translator: Do not translate ""Direct Discovery""."
 Reload,16008,Database authorization failed.,
-Reload,17000,Table not found in current app,"Happens when GetAssociationScores function is called with  any one of the two tables' name that does not exist in the app"
+Reload,17000,Table not found in current app,Happens when GetAssociationScores function is called with  any one of the two tables' name that does not exist in the app
 Reload,17001,Found duplicated table names,Happens when GetAssociationScores function is called with two table names being same
 Reload,18000,The variable must have a name.,It is mandatory to set a name when creating a variable or setting some properties to the variable
 Reload,18001,A variable with this name already exists. Please choose another name.,A variable with the same name already exists. Can happen when creating a variable or setting properties to a variable
@@ -204,7 +206,7 @@ Reload,19000,The content libraries could not be listed. Please try again and con
 Reload,19001,The content of the library could not be retrieved. Please try again and contact your system administrator if the problem persists.,"Happens when GetLibraryContent fails. In server mode, the engine did not get any answer from the repository."
 Reload,19002,Error when writing app-specific content.,Happens when bundling media items fails
 Reload,19003,Error when reading app-specific content.,Happens when unbundling media items fails
-Reload,19004,The content library you specified does not exist. Check the name of the library.,"Happens when GetLibraryContent fails in desktop because the library doesn't exist."
+Reload,19004,The content library you specified does not exist. Check the name of the library.,Happens when GetLibraryContent fails in desktop because the library doesn't exist.
 Reload,20000,Feature is disabled.,
 Reload,22000,OK,Maps to grpc::StatusCode::OK
 Reload,22001,The operation was cancelled.,Maps to grpc::StatusCode::CANCELLED
@@ -215,7 +217,7 @@ Reload,22005,The requested entity (file or directory) was not found.,Maps to grp
 Reload,22006,The entity (file or directory) could not be created as it already exists.,Maps to grpc::StatusCode::ALREADY_EXISTS
 Reload,22007,The caller does not have permission to execute the specified operation.,Maps to grpc::StatusCode::PERMISSION_DENIED
 Reload,22008,"A resource has been exhausted. Examples: a per-user quota was exceeded, or the file system is out of space.",Maps to grpc::StatusCode::RESOURCE_EXHAUSTED
-Reload,22009,"Operation was rejected because the system is not in a state required for the operation's execution.",Maps to grpc::StatusCode::FAILED_PRECONDITION
+Reload,22009,Operation was rejected because the system is not in a state required for the operation's execution.,Maps to grpc::StatusCode::FAILED_PRECONDITION
 Reload,22010,"The operation was aborted, typically due to a concurrency issue like sequencer check failures, transaction aborts, etc.",Maps to grpc::StatusCode::ABORTED
 Reload,22011,"The operation was past the valid range, for example, seeking or reading past end of the file.",Maps to grpc::StatusCode::OUT_OF_RANGE
 Reload,22012,The operation is not supported in this service.,Maps to grpc::StatusCode::UNIMPLEMENTED
