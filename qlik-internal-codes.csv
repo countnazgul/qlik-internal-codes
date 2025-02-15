@@ -313,53 +313,53 @@ Reload progress,27,Canceled creation of search index. Smart Search might be slow
 Reload progress,28,The search index is incomplete: timed out. Smart Search might be slower than expected.,Shown in the data load editor progress dialog when search index creation timed out.
 Reload progress,29,The search index is incomplete: not enough memory. Smart Search might be slower than expected.,Shown in the data load editor progress dialog when search index creation has gone out of the memory limit.
 Reload progress,30,Access was denied after reload. Check that the user that reloads the script is included in the section access part of the script.,Shown in the data load editor progress dialog when the reloading user looses access to the app after reload.
-Extra,422,Unprocessable Entity
-Extra,423,Unknown error
-Extra,429,Too Many Requests
-Extra,1015,Static App size exceeded
-Extra,1016,Direct Query mode not supported
-Extra,1017,Unknown error
-Extra,1018,App event source timeout
-Extra,2005,Connection is missing credentials
-Extra,9010,Unknown error
-Extra,9011,Object locked
-Extra,9012,Encryption key migration ongoing
-Extra,11047,Unsupported or bad format in QVD file
-Extra,11048,Action is blocked due to that an entitlement quota limit has been reached.
-Extra,21000,Too many fields in file
-Extra,21001,Too many tables in file
-Extra,33000,Unknown error
-Extra,33001,Unknown error
-Extra,33002,Unknown error
-Extra,33003,Unknown error
-Extra,33004,Unknown error
-Extra,33005,Unknown error
-Extra,33006,Unknown error
-Extra,33007,Unknown error
-Extra,25000,Invalid trendline def
-Extra,25001,Math error
-Extra,30101,Merge Load error: {0}
-Extra,30200,The FTP operation was not completed because the session was aborted
-Extra,30201,Passive mode is not available on the server
-Extra,30210,The server did not return any headers
-Extra,30211,The server response could not be parsed
-Extra,30212,The redirection requires user confirmation
-Extra,30220,The function needs to redo the request
-Extra,30221,The attempt to connect to the server failed
-Extra,30222,The connection with the server has been terminated
-Extra,30223,The connection with the server has been reset
-Extra,30224,The Internet connection has been lost
-Extra,30225,The format of the request is invalid
-Extra,30226,The function is unfamiliar with the Certificate Authority that generated the server's certificate
-Extra,30227,The requested operation is invalid
-Extra,30228,The URL is invalid
-Extra,30229,The requested ite could not be located
-Extra,30230,The request to connect and log on to an FTP server failed
-Extra,30231,The server name could not be resolved
-Extra,30232,A user interface or other blocking operation has been requested
-Extra,30233,SSL certificate common name(host name field) is incorrect. For example  if you entered www.server.com  and the common name on the certificate says www.different.com
-Extra,30234,SSL certificate date that was received from the server is invalid. The certificate has expired
-Extra,30235,The SSL certificate contains errors
-Extra,30236,The SSL certificate is invalid
-Extra,30237,The website or server indicated is unreachable
-Extra,31000,Unknown error
+Extra,422,Unprocessable Entity,
+Extra,423,Unknown error,
+Extra,429,Too Many Requests,
+Extra,1015,Static App size exceeded,
+Extra,1016,Direct Query mode not supported,
+Extra,1017,Unknown error,
+Extra,1018,App event source timeout,
+Extra,2005,Connection is missing credentials,
+Extra,9010,Unknown error,
+Extra,9011,Object locked,
+Extra,9012,Encryption key migration ongoing,
+Extra,11047,Unsupported or bad format in QVD file,
+Extra,11048,Action is blocked due to that an entitlement quota limit has been reached.,
+Extra,21000,Too many fields in file,
+Extra,21001,Too many tables in file,
+Extra,33000,Unknown error,
+Extra,33001,Unknown error,
+Extra,33002,Unknown error,
+Extra,33003,Unknown error,
+Extra,33004,Unknown error,
+Extra,33005,Unknown error,
+Extra,33006,Unknown error,
+Extra,33007,Unknown error,
+Extra,25000,Invalid trendline def,
+Extra,25001,Math error,
+Extra,30101,Merge Load error: {0},
+Extra,30200,The FTP operation was not completed because the session was aborted,
+Extra,30201,Passive mode is not available on the server,
+Extra,30210,The server did not return any headers,
+Extra,30211,The server response could not be parsed,
+Extra,30212,The redirection requires user confirmation,
+Extra,30220,The function needs to redo the request,
+Extra,30221,The attempt to connect to the server failed,
+Extra,30222,The connection with the server has been terminated,
+Extra,30223,The connection with the server has been reset,
+Extra,30224,The Internet connection has been lost,
+Extra,30225,The format of the request is invalid,
+Extra,30226,The function is unfamiliar with the Certificate Authority that generated the server's certificate,
+Extra,30227,The requested operation is invalid,
+Extra,30228,The URL is invalid,
+Extra,30229,The requested item could not be located,
+Extra,30230,The request to connect and log on to an FTP server failed,
+Extra,30231,The server name could not be resolved,
+Extra,30232,A user interface or other blocking operation has been requested,
+Extra,30233,SSL certificate common name(host name field) is incorrect. For example  if you entered www.server.com  and the common name on the certificate says www.different.com,
+Extra,30234,SSL certificate date that was received from the server is invalid. The certificate has expired,
+Extra,30235,The SSL certificate contains errors,
+Extra,30236,The SSL certificate is invalid,
+Extra,30237,The website or server indicated is unreachable,
+Extra,31000,Unknown error,
