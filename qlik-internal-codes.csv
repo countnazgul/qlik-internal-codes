@@ -1,286 +1,286 @@
-﻿Type,Code,Value,Comment
-Reload,-32700,JSON protocol parse error,"Failed to parse a Json request to engine, '}' on wrong place for instance. Do Not translate [JSON]. JSON stands for JavaScript Object Notation "
-Reload,-32603,Internal JSON protocol error,Internal error when setting up a request to engine. Do Not translate [JSON]. JSON stands for JavaScript Object Notation 
-Reload,-32602,Invalid JSON protocol parameters,Wrong parameters specified in a json request to engine. Do Not translate [JSON]. JSON stands for JavaScript Object Notation 
-Reload,-32601,Requested protocol method does not exist,"Requested protol method does not exist in engines API, could be wrong spelling"
-Reload,-32600,Invalid JSON protocol request,Something went wrong when handling a request. Do Not translate [JSON]. JSON stands for JavaScript Object Notation 
+Type,Code,Value,Comment
+Reload,-32700,JSON protocol parse error / JSON parse error,"Failed to parse a Json request to engine, '}' on wrong place for instance. Do Not translate [JSON]. JSON stands for JavaScript Object Notation "
+Reload,-32603,Internal JSON protocol error / Internal JSON-RPC error,Internal error when setting up a request to engine. Do Not translate [JSON]. JSON stands for JavaScript Object Notation
+Reload,-32602,Invalid JSON protocol parameters / Invalid method parameter(s),Wrong parameters specified in a json request to engine. Do Not translate [JSON]. JSON stands for JavaScript Object Notation
+Reload,-32601,Requested protocol method does not exist / Method does not exist,"Requested protol method does not exist in engines API, could be wrong spelling"
+Reload,-32600,Invalid JSON protocol request / Invalid JSON request,Something went wrong when handling a request. Do Not translate [JSON]. JSON stands for JavaScript Object Notation
 Reload,-129,Internal engine error,Something went wrong internally inside the engine. Likely low on resources (RAM).
-Reload,-128,Internal engine error,Something went wrong internally inside the engine. Likely a memory access violation.
+Reload,-128,Internal engine error / Internal error,Something went wrong internally inside the engine. Likely a memory access violation.
 Reload,-65,The request to the QBDI cluster failed,"Generic message for any error on the BDI side, causing the request from the engine to BDI cluster to fail."
-Reload,-1,Unknown error,Generic message for e.g. when the session has been killed or cannot be initialized due to unknown reasons.
-Reload,0,Unknown error,Something unspecified happen
-Reload,1,Some data is not correctly specified.,"For example, a Variable is not set as it should"
-Reload,2,The resource could not be found.,Happens when a resource
-Reload,3,Resource already exists.,Happens when a resource like a file or folder given was already existing
-Reload,4,Invalid path,"Invalid document path. Invalid characters in document name e.g., \, //, .., <, >, | etc on OpenDoc"
-Reload,5,Access is denied,Access rights problems on OpenDoc
-Reload,6,The system is out of memory.,Generic error that can be thrown if engine detects the system is out of memory upon a request
-Reload,7,Not initialized,Not used right now but can be thrown if a system is not initialized when a request arrives for example
-Reload,8,Invalid parameters,Thrown when QV API gets invalid input parameters
-Reload,9,Some parameters are empty.,Happens when engine expects parameters to certain requests but no parameters were given
-Reload,10,Internal error,Something went wrong internally inside the engine
-Reload,11,Corrupted data,"For example, Problem mapping up a table in the hypercube "
-Reload,12,Memory inconsistency,Not used right now but can be used if there is a problem allocating memory inside the engine
-Reload,13,Action was aborted unexpectedly.,Occurs when a fail check in memory allocation is triggered
-Reload,14,Validation cannot be performed at the moment. Please try again later.,Validation not possible right now
-Reload,15,Operation aborted,Operation was aborted internally in hypercube
-Reload,16,"Connection lost. Make sure that Qlik Sense is running properly. If your session has timed out due to inactivity, refresh to continue working.",Message displayed in a dialog when the session has been killed/cannot be initialized due to unknown reasons.
-Reload,17,This action is not supported in the current version of Qlik Sense.,Happens if a method is called which is not supported in the product version.
-Reload,18,An error occurred on a REST endpoint call.,Showed in Qlik Sense when there is a general problem with the REST connection such as HTTP timeout
-Reload,19,The request exceeds the memory limit.,Showed in Qlik Sense when the request was aborted because of the reached memory limit
-Reload,400,The request is invalid.,HTTP standardized error code; The request cannot be fulfilled due to bad syntax.
-Reload,401,Access is denied: the authentication has failed or has not been provided.,HTTP standardized error code
-Reload,402,Payment is required.,HTTP standardized error code
-Reload,403,Access is denied.,HTTP standardized error code; Forbidden;
-Reload,404,The requested resource cannot be found.,HTTP standardized error code; Not found
-Reload,405,This method is not supported.,HTTP standardized error code;Method not allowed
-Reload,406,Not acceptable,HTTP standardized error code
-Reload,407,Proxy authentication required,HTTP standardized error code
-Reload,408,The request has timed out.,HTTP standardized error code
-Reload,409,The request could not be completed due to a conflict.,HTTP standardized error code
-Reload,410,The requested resource is no longer available.,HTTP standardized error code
-Reload,411,The content length of the request is required.,HTTP standardized error code
-Reload,412,The precondition has failed.,HTTP standardized error code; The server does not meet one of the preconditions that the requester put on the request.
-Reload,413,The request entity is too large.,HTTP standardized error code
-Reload,414,The request URL is too long.,HTTP standardized error code
-Reload,415,The request entity's media type is not supported.,HTTP standardized error code
-Reload,416,The requested range is not satisfiable.,"HTTP standardized error code; The client has asked for a portion of the file, but the server cannot supply that portion"
-Reload,417,Expectation failed,HTTP standardized error code
-Reload,500,Internal server error,"HTTP standardized error code; generic error message, no specific message is suitable."
-Reload,501,The request method is not recognized or cannot be fulfilled.,HTTP standardized error code; Not implemented
-Reload,502,Bad gateway,HTTP standardized error code
-Reload,503,The service is unavailable.,HTTP standardized error code
-Reload,504,Gateway timeout,HTTP standardized error code
-Reload,505,The HTTP protocol version is not supported.,HTTP standardized error code
-Reload,509,Bandwidth limit exceeded,HTTP standardized error code
-Reload,700,Host could not be resolved.,Error occurs when sending CreateConnection to an invalid url
-Reload,1000,An app with this name already exists. Please choose another name.,Happens when an application already exist when CreateApp is called
-Reload,1001,"An app name must not include  \\/:<>|\""?*","Happens on Import App or DoSave, invalid characters in name \\/:<>|\""?*"
-Reload,1002,App is already open.,"Happens ImportApp, OpenDoc, CreateDoc when the application is already open"
-Reload,1003,The app you specified could not be found.,"Happens on LoadApp, the specified app could not be found"
-Reload,1004,The app could not be imported or created.,"Happens on ImportApp, fail to create or import an app"
-Reload,1005,The app could not be saved. Check if it is read only.,"Happens on DoSave, due to read only flag set or some other problem with file system/database"
-Reload,1006,The app was not created.,"Happens on CreateApp, CreateDoc - correct serializer not found or some other problem saving the app after creation"
-Reload,1007,Failed to get app because there is no app loaded.,Happens on GetActiveDoc when there is no active app
-Reload,1008,Could not connect to the opened app.,Happens when an user could not connect to an opened app
-Reload,1009,"You are trying to open an app in multiple tabs, but you cannot open an app both with and without data.",Happens when trying to open an already open app without data when the app is already open with data and vice versa
-Reload,1010,The migration service could not be started.,Showed in Qlik Sense when the migration service could not be started
-Reload,1011,The app migration could not be started.,Shown when an app migration could not be started
-Reload,1012,App migration failed. Check the logs for more details.,Showed in Qlik Sense when an app migration failed
-Reload,1013,App reload failed. Synchronization of the app is in progress.,Happens when reloading of an app on the RIM node is triggered but the script is not yet synced
-Reload,1014,App export failed.,Shown when attempting to export and reduce an app. Likely cause: not possible to reduce the app's current state.
-Reload,2000,Connection with the given name already exists.,Happens when CreateConnection or ModifyConnection is called and given connection name is not unique
-Reload,2001,Connection not found.,"Happens when GetConnection, GetConnectionInfo, ModifyConnection is called and given connection name could not be found"
-Reload,2002,Failed to load connection.,Happens upon load of an application in QvNext and we could not load all referenced connections in the app
-Reload,2003,Failed to import connection.,Happens upon ImportApp and all referenced connection belonging to the app could not be imported or created as new
-Reload,2004,"Invalid connection name. Please enter a new connection name of 1-256 characters, without using \ / : * ? "" < > |",Happens when trying to create a connection with an invalid name
-Reload,2300,Connector does not support file streaming.,Shown when connector does not support file streaming.
-Reload,2301,Data file size exceeded file streaming buffer size. Adjust the StreamingBufferSizeMB setting.,Error message that appears if you attempt to stream a file larger than the StreamingBufferSize. Do not translate StreamingBufferSizeMB
-Reload,3000,File access is denied.,"Happens upon OpenDoc, problem to load an app due to no access to the app file for various reasons, for instance no license or server is out of document sessionssessioner"
-Reload,3001,File name is invalid.,Invalid file name upon DoSave app
-Reload,3002,The file you are attempting to load is corrupt. Check the file for errors and try again.,Error message that occurs when a user tries to either load a corrupted app or corrupted excel file.
-Reload,3003,A file belonging to the loaded or imported app could not be found.,Happens upon load or import of an app and the belonging file could not be found
-Reload,3004,Unsupported file format,Happens upon load or import of an app and the file format of the given app is no longer supported
-Reload,3005,The file was opened in an unsupported mode. Apps with the qvw suffix cannot be opened without their data.,Shown in Qlik Sense Desktop when a qvw app was opened without data which is unsupported.
-Reload,3006,No table found in the HTML file.,Shown when importing an HTML-file without a table
-Reload,4000,You cannot access the requested resource.,No access to a resource for the given user
-Reload,4001,The system failed to log you in.,"OpenDoc, if Username is all in hexagonal digits, validation is made and this impersonation can fail"
+Reload,-1,Unknown error / Unknown error,Generic message for e.g. when the session has been killed or cannot be initialized due to unknown reasons.
+Reload,0,Unknown error / OK,Something unspecified happen
+Reload,1,Some data is not correctly specified. / Resource not set,"For example, a Variable is not set as it should"
+Reload,2,The resource could not be found. / Resource not found,Happens when a resource
+Reload,3,Resource already exists. / Resource already exists,Happens when a resource like a file or folder given was already existing
+Reload,4,Invalid path / Invalid path,"Invalid document path. Invalid characters in document name e.g., \, //, .., <, >, | etc on OpenDoc"
+Reload,5,Access is denied / Access denied,Access rights problems on OpenDoc
+Reload,6,The system is out of memory. / Out of memory,Generic error that can be thrown if engine detects the system is out of memory upon a request
+Reload,7,Not initialized / Not initialized,Not used right now but can be thrown if a system is not initialized when a request arrives for example
+Reload,8,Invalid parameters / Invalid parameters,Thrown when QV API gets invalid input parameters
+Reload,9,Some parameters are empty. / Empty parameters,Happens when engine expects parameters to certain requests but no parameters were given
+Reload,10,Internal error / Internal error,Something went wrong internally inside the engine
+Reload,11,Corrupted data / Corrupt data,"For example, Problem mapping up a table in the hypercube "
+Reload,12,Memory inconsistency / Memory inconsistency,Not used right now but can be used if there is a problem allocating memory inside the engine
+Reload,13,Action was aborted unexpectedly. / Invisible owner abort,Occurs when a fail check in memory allocation is triggered
+Reload,14,Validation cannot be performed at the moment. Please try again later. / Prohibit validate,Validation not possible right now
+Reload,15,Operation aborted / Request aborted,Operation was aborted internally in hypercube
+Reload,16,"Connection lost. Make sure that Qlik Sense is running properly. If your session has timed out due to inactivity, refresh to continue working. / Unknown error",Message displayed in a dialog when the session has been killed/cannot be initialized due to unknown reasons.
+Reload,17,This action is not supported in the current version of Qlik Sense. / Unsupported in product version,Happens if a method is called which is not supported in the product version.
+Reload,18,An error occurred on a REST endpoint call. / Unknown error,Showed in Qlik Sense when there is a general problem with the REST connection such as HTTP timeout
+Reload,19,The request exceeds the memory limit. / Memory limit reached,Showed in Qlik Sense when the request was aborted because of the reached memory limit
+Reload,400,The request is invalid. / Bad Request,HTTP standardized error code; The request cannot be fulfilled due to bad syntax.
+Reload,401,Access is denied: the authentication has failed or has not been provided. / Unauthorized,HTTP standardized error code
+Reload,402,Payment is required. / Payment Required,HTTP standardized error code
+Reload,403,Access is denied. / Forbidden,HTTP standardized error code; Forbidden;
+Reload,404,The requested resource cannot be found. / Not Found,HTTP standardized error code; Not found
+Reload,405,This method is not supported. / Method Not Allowed,HTTP standardized error code;Method not allowed
+Reload,406,Not acceptable / Not Acceptable,HTTP standardized error code
+Reload,407,Proxy authentication required / Proxy Authentication Required,HTTP standardized error code
+Reload,408,The request has timed out. / Request Timeout,HTTP standardized error code
+Reload,409,The request could not be completed due to a conflict. / Conflict,HTTP standardized error code
+Reload,410,The requested resource is no longer available. / Gone,HTTP standardized error code
+Reload,411,The content length of the request is required. / Length Required,HTTP standardized error code
+Reload,412,The precondition has failed. / Precondition Failed,HTTP standardized error code; The server does not meet one of the preconditions that the requester put on the request.
+Reload,413,The request entity is too large. / Request Entity Too Large,HTTP standardized error code
+Reload,414,The request URL is too long. / Request-URI Too Long,HTTP standardized error code
+Reload,415,The request entity's media type is not supported. / Unsupported Media Type,HTTP standardized error code
+Reload,416,The requested range is not satisfiable. / Requested Range Not Satisfiable,"HTTP standardized error code; The client has asked for a portion of the file, but the server cannot supply that portion"
+Reload,417,Expectation failed / Expectation Failed,HTTP standardized error code
+Reload,500,Internal server error / Internal Server Error,"HTTP standardized error code; generic error message, no specific message is suitable."
+Reload,501,The request method is not recognized or cannot be fulfilled. / Not Implemented,HTTP standardized error code; Not implemented
+Reload,502,Bad gateway / Bad Gateway,HTTP standardized error code
+Reload,503,The service is unavailable. / Service Unavailable,HTTP standardized error code
+Reload,504,Gateway timeout / Gateway Timeout,HTTP standardized error code
+Reload,505,The HTTP protocol version is not supported. / HTTP Version Not Supported,HTTP standardized error code
+Reload,509,Bandwidth limit exceeded / Bandwidth Limit Exceeded,HTTP standardized error code
+Reload,700,Host could not be resolved. / Host could not be resolved,Error occurs when sending CreateConnection to an invalid url
+Reload,1000,An app with this name already exists. Please choose another name. / App already exists,Happens when an application already exist when CreateApp is called
+Reload,1001,"An app name must not include  \\/:<>|\""?* / Invalid app name","Happens on Import App or DoSave, invalid characters in name \\/:<>|\""?*"
+Reload,1002,App is already open. / App already open,"Happens ImportApp, OpenDoc, CreateDoc when the application is already open"
+Reload,1003,The app you specified could not be found. / App not found,"Happens on LoadApp, the specified app could not be found"
+Reload,1004,The app could not be imported or created. / App import failed,"Happens on ImportApp, fail to create or import an app"
+Reload,1005,The app could not be saved. Check if it is read only. / App save failed,"Happens on DoSave, due to read only flag set or some other problem with file system/database"
+Reload,1006,The app was not created. / App creation failed,"Happens on CreateApp, CreateDoc - correct serializer not found or some other problem saving the app after creation"
+Reload,1007,Failed to get app because there is no app loaded. / App invalid,Happens on GetActiveDoc when there is no active app
+Reload,1008,Could not connect to the opened app. / Failed to connect to app,Happens when an user could not connect to an opened app
+Reload,1009,"You are trying to open an app in multiple tabs, but you cannot open an app both with and without data. / App already open in different mode",Happens when trying to open an already open app without data when the app is already open with data and vice versa
+Reload,1010,The migration service could not be started. / App migration service could not be contacted,Showed in Qlik Sense when the migration service could not be started
+Reload,1011,The app migration could not be started. / Could not start the app migration,Shown when an app migration could not be started
+Reload,1012,App migration failed. Check the logs for more details. / Migration service could not migrate app,Showed in Qlik Sense when an app migration failed
+Reload,1013,App reload failed. Synchronization of the app is in progress. / Unknown error,Happens when reloading of an app on the RIM node is triggered but the script is not yet synced
+Reload,1014,App export failed. / App export failed,Shown when attempting to export and reduce an app. Likely cause: not possible to reduce the app's current state.
+Reload,2000,Connection with the given name already exists. / Connection already exists,Happens when CreateConnection or ModifyConnection is called and given connection name is not unique
+Reload,2001,Connection not found. / Connection not found,"Happens when GetConnection, GetConnectionInfo, ModifyConnection is called and given connection name could not be found"
+Reload,2002,Failed to load connection. / Failed to load connection,Happens upon load of an application in QvNext and we could not load all referenced connections in the app
+Reload,2003,Failed to import connection. / Failed to import connection,Happens upon ImportApp and all referenced connection belonging to the app could not be imported or created as new
+Reload,2004,"Invalid connection name. Please enter a new connection name of 1-256 characters, without using \ / : * ? "" < > | / Connection name is invalid. Should be 1-256 characters and not contain <>:""/|?*",Happens when trying to create a connection with an invalid name
+Reload,2300,Connector does not support file streaming. / Connector does not support file streaming,Shown when connector does not support file streaming.
+Reload,2301,Data file size exceeded file streaming buffer size. Adjust the StreamingBufferSizeMB setting. / Data file size exceeded file streaming buffer size,Error message that appears if you attempt to stream a file larger than the StreamingBufferSize. Do not translate StreamingBufferSizeMB
+Reload,3000,File access is denied. / File access denied,"Happens upon OpenDoc, problem to load an app due to no access to the app file for various reasons, for instance no license or server is out of document sessionssessioner"
+Reload,3001,File name is invalid. / Invalid file name,Invalid file name upon DoSave app
+Reload,3002,The file you are attempting to load is corrupt. Check the file for errors and try again. / File corrupted,Error message that occurs when a user tries to either load a corrupted app or corrupted excel file.
+Reload,3003,A file belonging to the loaded or imported app could not be found. / File not found,Happens upon load or import of an app and the belonging file could not be found
+Reload,3004,Unsupported file format / Unsupported file format version,Happens upon load or import of an app and the file format of the given app is no longer supported
+Reload,3005,The file was opened in an unsupported mode. Apps with the qvw suffix cannot be opened without their data. / File opened in unsupported mode,Shown in Qlik Sense Desktop when a qvw app was opened without data which is unsupported.
+Reload,3006,No table found in the HTML file. / Table not found,Shown when importing an HTML-file without a table
+Reload,4000,You cannot access the requested resource. / User access denied,No access to a resource for the given user
+Reload,4001,The system failed to log you in. / User impersonation failed,"OpenDoc, if Username is all in hexagonal digits, validation is made and this impersonation can fail"
 Reload,4003,Operation aborted,
 Reload,4004,Application has been deleted from memory on the engine.,
-Reload,5000,Server has no more session and usage Client Access Licences.,"License check on OpenDoc on classic server, if the server is out of slots and the engine build number is less than 3068. "
-Reload,5001,Server has no more session Client Access Licences.,"License check on OpenDoc  on classic server, if server is out session cals"
-Reload,5002,Server has no more usage Client Access Licences.,"License check on OpenDoc on classic server, if server is out usage cals"
-Reload,5003,Server has no more Client Access Licences.,Not used right now
-Reload,5004,Server has no more named Client Access Licences.,"License check on OpenDoc on classic server, if server is out named cals"
-Reload,5005,Server off duty,"Happens when GetStreamList, GetDocList, GetAdminDocList  is called and engine is off duty"
-Reload,5006,Server busy,Happens when user tries to connect to an app and server cannot handle more sessions at this point
-Reload,5007,The license has expired. Please update to a current version to receive a new license.,"A Global check upon every request to engine, if the license has expired this is thrown"
-Reload,5008,AJAX is disabled.,Not used right now. Connected to old AJAX in classic server
-Reload,5009,No usage token available for the user of this session.,"License check on OpenDoc on classic server, if Server can't allocate token for session user."
+Reload,5000,Server has no more session and usage Client Access Licences. / Server out of session and usage cals,"License check on OpenDoc on classic server, if the server is out of slots and the engine build number is less than 3068. "
+Reload,5001,Server has no more session Client Access Licences. / File not found,"License check on OpenDoc  on classic server, if server is out session cals"
+Reload,5002,Server has no more usage Client Access Licences. / File not found,"License check on OpenDoc on classic server, if server is out usage cals"
+Reload,5003,Server has no more Client Access Licences. / Server out of cals,Not used right now
+Reload,5004,Server has no more named Client Access Licences. / Server out of named cals,"License check on OpenDoc on classic server, if server is out named cals"
+Reload,5005,Server off duty / Server off duty,"Happens when GetStreamList, GetDocList, GetAdminDocList  is called and engine is off duty"
+Reload,5006,Server busy / Server busy,Happens when user tries to connect to an app and server cannot handle more sessions at this point
+Reload,5007,The license has expired. Please update to a current version to receive a new license. / License has expired,"A Global check upon every request to engine, if the license has expired this is thrown"
+Reload,5008,AJAX is disabled. / Ajax disabled,Not used right now. Connected to old AJAX in classic server
+Reload,5009,No usage token available for the user of this session. / No user license available for the user of this session,"License check on OpenDoc on classic server, if Server can't allocate token for session user."
 Reload,5010,Only AJAX clients supported with this license.,"License check on OpenDoc on classic server, C++ clients denied access."
-Reload,6000,Invalid hypercube object.,Problems with validation inside of the hypercube
-Reload,6001,The hypercube results are too large.,"Problems with validation inside of the hypercube and the resulting pages are too large, i.e. over 10000 results"
-Reload,6002,Invalid hypercube object state.,"Problems with validation inside of the hypercube, no validation data exist for the specified object"
-Reload,6003,Not currently possible to perform the requested operation.,Thrown from hypercube when an operation is not allowed on an object because we are in modal mode for the application
-Reload,7000,All expressions are disabled,Calculation error
-Reload,7001,Dimension or measure not in library,Calculation error
-Reload,7002,Out of calculation memory,Calculation error
-Reload,7003,Calculation set is too large,Calculation error
-Reload,7004,Calculation timed out,Calculation error
-Reload,7005,The calculation condition is not fulfilled,Displayed on visualization that has not fulfilled its calculation condition
-Reload,7006,Mixed DBMS and in-memory aggregation is not supported,Calculation error; DBMS stands for database management system
-Reload,7007,Direct query attempted against missing or non-direct table,Calculation error
-Reload,7008,Invalid sort order in properties,"Calculation error, wrong sort order"
-Reload,7009,The calculation page is too large. Reduce the number of cells and try again.,"Calculation error, result too large"
-Reload,7010,Semantic fields are not allowed in calculation,"Calculation error, semantic fields were used"
-Reload,7011,The calculation of the object could not be performed successfully. Try refreshing the app.,"The object should have been validated, but it is invalid."
-Reload,7012,The dimension is already in use.,
-Reload,7013,An object is referring to a Direct Discovery field that does not exist. Please update the definition of the object or add the missing field in the Direct Discovery table.,"Do not translate ""Direct Discovery"""
-Reload,7014,A calculation condition is not met. The dimension has been excluded from calculation.,
-Reload,8000,Invalid identifier for the linked object,Error on GetLayout the objects properties extends an invalid id
-Reload,8001,Linked object not found on layout,Error on GetLayout and a linked object to the object is not found among the objects in the app
-Reload,8002,Invalid linked object,Error on GetLayout and a linked object to the object is invalid
-Reload,9000,The object could not be saved.,Something went wrong while persisting an object
-Reload,9001,The object could not be read.,Something went wrong while reading a persisted object
-Reload,9002,The object could not be deleted.,Something went wrong while deleting persisted object
-Reload,9003,The object could not be found.,Failed to find a specific ID related to persistance of objects
-Reload,9004,"You are using Qlik Sense Desktop instead of Qlik Sense, or you are using the wrong version of Qlik Sense.",Sent out when client tries to do an unsupported action related to persistance. The user is performing an action on Qlik Sense Desktop that requires the full product. Or the user is doing something that is not supported in the current version .
-Reload,9005,The app migration failed because the app is write-protected.,Showed in Qlik Sense when the app needs upgrade and the file on disk is write-protected.
-Reload,9006,The app migration was cancelled. Open the app again to migrate it.,Showed in Qlik Sense when the app migration was cancelled
-Reload,9007,The app migration could not back up the app. The app migration is cancelled.,Showed in Qlik Sense when the app migration failed to backup. The migration is cancelled.
-Reload,9008,Insufficient disk space for operation,Showed in Qlik Sense when disk space has run out.
-Reload,9009,You are trying to use a method that is not supported in session apps,"Showed in Qlik Sense when a method that is not supported, is called on a session app"
-Reload,9510,Invalid parameter sent from the repository in the binary sync protocol,Do not translate. Related to Set Chunk. This error code is only used internally
-Reload,9511,Invalid parameter sent from the repository in the binary sync protocol,Do not translate. Related to Get Chunk. This error code is only used internally
-Reload,10000,You do not have access to the data source.,Access rights problems on create new ODBC/OLEDB connection
-Reload,11000,Reload in progress.,A reload request from another connection in the same session is currently being processed.
-Reload,11001,The following table could not be found: '{0}'. Correct the reference to the table and reload the script.,An error message for when a table named in a script cannot be found.
-Reload,11002,The following statement could not be identified: '{0}'. Correct the syntax of this statement and reload the script.,An error message for when the engine cannot figure out what statement type was intended due to a syntax error.
-Reload,11003,There is a syntax problem with the following script element: '{0}'.  Correct the syntax and reload the script.,An error message for when the engine finds a script element
-Reload,11004,"The engine expected nothing, but found the following script element: '{0}'. Correct the syntax and reload the script.",An error message for when the engine finds a script element
-Reload,11005,The engine found the following script element: '{0}'. The following script element was expected: '{1}'. Correct the syntax and reload the script.,An error message for when the engine finds a script element
-Reload,11006,The engine found the following script element: '{0}'. One of the following script elements was expected: '{1}' or  '{2}'. Correct the syntax and reload the script.,An error message for when the engine finds a script element
-Reload,11007,"The engine found the following script element: '{0}'. One of the following script elements was expected: '{1}', '{2}', or '{3}'. Correct the syntax and reload the script.",An error message for when the engine finds a script element
-Reload,11008,"The engine found the following script element: '{0}'. One of the following script elements was expected: '{1}', '{2}', '{3}', or '{4}'. Correct the syntax and reload the script.",An error message for when the engine finds a script element
-Reload,11009,"The engine found the following script element: '{0}'. One of the following script elements was expected: '{1}', '{2}', '{3}', '{4}', or '{5}'. Correct the syntax and reload the script.",An error message for when the engine finds a script element
-Reload,11010,"The engine found the following script element: '{0}'. One of the following script elements was expected: '{1}', '{2}', '{3}', '{4}', '{5}', or '{6}'. Correct the syntax and reload the script.",An error message for when the engine finds a script element
-Reload,11011,"The engine found the following script element: '{0}'. One of the following script elements was expected: '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', or '{7}'. Correct the syntax and reload the script.",An error message for when the engine finds a script element
-Reload,11012,"The engine found the following script element: '{0}'. Another script element was expected, such as: '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', or '{7}'. Correct the syntax and reload the script.",An error message for when the engine finds a script element
-Reload,11013,The following field could not be found: '{0}'. Correct the reference to the field and reload the script.,An error message for when a field named in a script cannot be found.
-Reload,11014,The following mapping table could not be found: '{0}'. Correct the reference to the mapping table and reload the script.,An error message for when a mapping table that was named in the script cannot be found.
-Reload,11015,The following connection could not be found: '{0}'. Correct the reference to the connection and reload the script.,An error message for when a connection that was named in the script cannot.  From script like: LIB CONNECT TO [lib://database]
-Reload,11016,This name already exists: '{0}'. Select a different name for the rename operation and reload the script.,An error message for when the name selected for a rename operation is already in use.
-Reload,11017,The file is in an incorrect format or may be damaged. Save the file in DIF format and reload the script.,An error message for when a DIF file is specified but the file it is pointing to is not in the DIF format or is too damaged to be recognized. Do not translate [DIF].
-Reload,11018,The file is in an incorrect format or may be damaged. Save the file in BIFF format and reload the script.,An error message for when a BIFF file is specified but the file it is pointing to is not in the BIFF format or is too damaged to be recognized. Do not translate [BIFF].
-Reload,11019,Cannot read an Excel file protected by passwords. Remove the password and reload the script.,An error message for when the excel file selected to load data from is password protected and inaccessible to Sense. Do not translate [Excel].
-Reload,11020,Cannot open the following file: '{0}'. Check to confirm that the file is available and reload the script.,"An error message for when a file is specified in a script, but cannot be opened due to the file not existing, the system not having the rights to open it, the file being already opened and locked by another program, or another cause of the file being made inaccessible."
-Reload,11021,The following autogenerate number is incorrect: '{0}'. Autogenerate numbers cannot be negative numbers or greater than 2147483647. Correct the autogenerate number and reload the script.,"An error message for when the autogenerate number, that is the number of records the autogenerate statement is generating, of a LOAD statement is invalid. Typically a negative number or too large like more than 2^31. Do not translate [autogenerate]"
-Reload,11022,These LOAD statement prefixes cannot be combined. Remove the conflicting prefixes and reload.,"An error message for when a LOAD statement includes conflicting prefixes, such as JOIN and NONCONCATENATE. Do not translate [LOAD]"
-Reload,11023,The control statement does not match its corresponding start statement. Confirm that the start and end of the control statement are formatted correctly and reload.,"An error message for when a Control statement that has a start and end part, such as IF ... and the corresponding end if, does not have matching start and end parts."
-Reload,11024,"The following connection could not be found: {0}. Correct the reference to the connection or confirm you have access rights to this connection, and reload.",An error message for when the connection specified cannot be found.
-Reload,11025,The following connection is invalid: {0}.  Correct the reference to the connection and reload.,An error message for when the connection specified exists but something is wrong with its definition.
-Reload,11026,The following path is outside the folder defined by the connection: '{0}'. Enter the complete path and reload the script.,"An error message for when a path is probably using .. to escape the file system root, which is not allowed."
-Reload,11027,There is no qualified path for the following file: {0}. Save your QlikView document before using qualify statements.,An error message for when a path is missing a qualified path. This specific message will only come when using relative paths and the app/document is not saved
-Reload,11028,This statement only works with lib:// paths in standard mode. Change your statement to use a lib:// path and reload the script.,An error message for when LOAD is used with a path other than a Lib path in standard mode. Do not translate [lib://]
-Reload,11029,Inconsistent use of semantic fields. Correct the use of the semantic prefix and reload the script.,An error message for when semantic fields are used inconsistently. Do Not Translate [semantic].
-Reload,11030,"There is no open data connection. There may be a missing or failed CONNECT statement. Check your CONNECT statement, confirm the connection is accessible, and reload the script.","An error message for when where is no open data connection, likely as the result of a SELECT statement missing a successful CONNECT statement before it, but also potentially because the database is unavailable or the database account is invalid. Do not translate [CONNECT]."
-Reload,11031,The GROUP BY clause requires aggregation expressions. Add aggregation expressions to the clause and reload the script.,An error message for when a GROUP BY clause is missing aggregation expressions such as SUM or COUNT. Do not translate: [GROUP BY].
-Reload,11032,CONNECT statements other than LIB CONNECT are not available in this script mode. Change the CONNECT statement to LIB CONNECT and reload the script.,"An error message for when a CONNECT statement is used in the incorrect script mode. Do not translate: CONNECT, LIB CONNECT. Do not translate [CONNECT, LIB CONNECT]"
-Reload,11033,ODBC connection failed. Check to see if the database is available and that it is identified correctly in the script.,An error message for when a ODBC connection fails. Do not translate [ODBC]
-Reload,11034,OLEDB connection failed. Check to see if the database is available and that it is identified correctly in the script.,An error message for when a OLEDB connection fails. Do not translate [OLEDB]
-Reload,11035,Custom connection failed. Check to see if the database is available and that it is identified correctly in the script.,An error message for when a custom connection fails.
-Reload,11036,ODBC read failed. Check to see if the database is available and that it is identified correctly in the script.,An error message for when a ODBC read fails. Do not translate [ODBC]
-Reload,11037,OLEDB read failed. Check to see if the database is available and that it is identified correctly in the script.,An error message for when a OLEDB read fails. Do not translate [OLEDB]
-Reload,11038,Custom read failed. Check to see if the database is available and that it is identified correctly in the script.,An error message for when a Custom read fails.
-Reload,11039,Binary load is not allowed with the following document: {0}.,An error message for when Binary LOAD is attempted on a document that has been marked as protected from Binary LOAD. It could be sensitive data and the admin disabled it. Do not translate [binary LOAD]
-Reload,11040,The following connector failed to start: {0}. The connector cannot be found or the system is missing DLLs for the connector. Contact your system administrator.,An error message for when a connector fails to start. This could be from the system missing DLL for the connector or the system being unable to find the connector. Do not translate [DLL]
-Reload,11041,The connector is not responding. Contact your system administrator.,An error message for when a connector is not responding.
-Reload,11042,The connector has returned the following error: {0}.,An error message for when the connector failed to perform a task and returned an error
-Reload,11043,Connector connect error: {0}.,The CONNECT statment
-Reload,11044,Custom connector {0} was not found.,Custom connector type is probably not supported. Only supported extensions are .exe and .dll.
-Reload,11045,Duplicate keys found when loading Input Field {0}.,
-Reload,11046,There is no previously loaded table to perform a Concatenate LOAD with.,
-Reload,12000,There is a new version of Qlik Sense Desktop available. Please update to the new version.,Showed when we have a new version of the product available
-Reload,12001,Your version of Qlik Sense Desktop has expired.,Showed when the product  is outdated
-Reload,12002,"Section access information was detected. This is not supported in Qlik Sense Desktop. To be able to load data into Qlik Sense Desktop, make sure to remove any section access information using a version that supports this.",Showed when Qlik Sense Desktop detects section access in the app upon load
-Reload,12003,"Because the app is open, it cannot be deleted. Please close the app and try again.",Showed when an already opened app is about to be deleted in Qlik Sense Desktop
-Reload,12004,User is not authenticated. Please log in to Qlik Sense Desktop.,Showed when an Engine API is called before the user has authenticated in Sense Desktop
-Reload,13000,You have reached the size limitation of the export process. Please reduce the number of values to export or change the settings.,Shown when an export fails due to reaching the limits set in the settings.ini configuration file.
-Reload,13001,There is no data to export. Please make sure the data in your visualization is correct.,Shown when an export fails due to no hypercubes found. There is no data in the visualization to export.
-Reload,14000,File with the given offset was not found.,Error message
-Reload,15000,The search timed out,"Error message. The search took too long, it timed out. "
-Reload,16000,"The Direct Discovery expression failed. There can be various causes, such as a communication error, or if the data load script contains a query that is no longer valid.",Error message. Note to translator: Do not translate [Direct Discovery].
-Reload,16001,There are too many rows to display this visualization. Please make selections so that fewer detail records are retrieved.,Error message for Direct Discovery. 
-Reload,16002,Direct query returned empty result set.,Error message. Note to translator: Do not translate [Direct query]. 
-Reload,16003,Database connection failed.,Error message.  
-Reload,16004,Measure fields are not allowed with aggregated fields.,Error message. Note to translator: Do not translate [Measure]. 
-Reload,16005,Detail field is not allowed with aggregated fields.,Error message. Note to translator: Do not translate [Detail]. 
-Reload,16006,Synthetic keys are  not allowed in a Direct Discovery table. A Direct Discovery table cannot be part of a loop.,Error message. Note to translator: Do not translate [Direct Discovery].  
-Reload,16007,Only fields from a single Direct Discovery table are allowed.,"Error message. Note to translator: Do not translate ""Direct Discovery""."
-Reload,16008,Database authorization failed.,
-Reload,17000,Table not found in current app,Happens when GetAssociationScores function is called with  any one of the two tables' name that does not exist in the app
-Reload,17001,Found duplicated table names,Happens when GetAssociationScores function is called with two table names being same
-Reload,18000,The variable must have a name.,It is mandatory to set a name when creating a variable or setting some properties to the variable
-Reload,18001,A variable with this name already exists. Please choose another name.,A variable with the same name already exists. Can happen when creating a variable or setting properties to a variable
-Reload,18002,The name of the generic variable is inconsistent with the name of the underlying variable. Please remove the variable and create it again and notify Qlik Support of this error.,Showed in Qlik Sense when a generic variable exists with a name not known by the underlying variable list
-Reload,19000,The content libraries could not be listed. Please try again and contact your system administrator if the problem persists.,"Happens when GetContentLibraries fails. In server mode, the engine did not get any answer from the repository."
-Reload,19001,The content of the library could not be retrieved. Please try again and contact your system administrator if the problem persists.,"Happens when GetLibraryContent fails. In server mode, the engine did not get any answer from the repository."
-Reload,19002,Error when writing app-specific content.,Happens when bundling media items fails
-Reload,19003,Error when reading app-specific content.,Happens when unbundling media items fails
-Reload,19004,The content library you specified does not exist. Check the name of the library.,Happens when GetLibraryContent fails in desktop because the library doesn't exist.
-Reload,20000,Feature is disabled.,
-Reload,22000,OK,Maps to grpc::StatusCode::OK
-Reload,22001,The operation was cancelled.,Maps to grpc::StatusCode::CANCELLED
-Reload,22002,Unknown error,Maps to grpc::StatusCode::UNKNOWN
-Reload,22003,Client specified an invalid argument.,Maps to grpc::StatusCode::INVALID_ARGUMENT
-Reload,22004,Deadline expired before operation could complete.,Maps to grpc::StatusCode::DEADLINE_EXCEEDED
-Reload,22005,The requested entity (file or directory) was not found.,Maps to grpc::StatusCode::STATUS_NOT_FOUND
-Reload,22006,The entity (file or directory) could not be created as it already exists.,Maps to grpc::StatusCode::ALREADY_EXISTS
-Reload,22007,The caller does not have permission to execute the specified operation.,Maps to grpc::StatusCode::PERMISSION_DENIED
-Reload,22008,"A resource has been exhausted. Examples: a per-user quota was exceeded, or the file system is out of space.",Maps to grpc::StatusCode::RESOURCE_EXHAUSTED
-Reload,22009,Operation was rejected because the system is not in a state required for the operation's execution.,Maps to grpc::StatusCode::FAILED_PRECONDITION
-Reload,22010,"The operation was aborted, typically due to a concurrency issue like sequencer check failures, transaction aborts, etc.",Maps to grpc::StatusCode::ABORTED
-Reload,22011,"The operation was past the valid range, for example, seeking or reading past end of the file.",Maps to grpc::StatusCode::OUT_OF_RANGE
-Reload,22012,The operation is not supported in this service.,Maps to grpc::StatusCode::UNIMPLEMENTED
-Reload,22013,Internal error.,Maps to grpc::StatusCode::INTERNAL
-Reload,22014,The service is currently unavailable. You may be able to correct this by retrying and using backoff.,Maps to grpc::StatusCode::UNAVAILABLE
-Reload,22015,Unrecoverable data loss or corruption.,Maps to grpc::StatusCode::DATA_LOSS
-Reload,22016,The request does not have valid authentication credentials for the operation.,Maps to grpc::StatusCode::UNAUTHENTICATED
-Reload,23001,Invalid xlsx object.,libxlsxwriter error
-Reload,23002,Invalid xlsx file.,libxlsxwriter error
-Reload,23003,Invalid xlsx sheet.,libxlsxwriter error
-Reload,23004,Invalid xlsx export range.,libxlsxwriter error
-Reload,23005,General error when writing xlsx.,libxlsxwriter error
-Reload,23006,Cannot allocate memory when writing xlsx file.,libxlsxwriter error
-Reload,23007,Error creating output xlsx file. This usually due to an error with permissions.,libxlsxwriter error
-Reload,23008,Error encountered when creating a tmpfile during file assembly.,libxlsxwriter error
-Reload,23009,Zlib error with a file operation while creating xlsx file.,libxlsxwriter error
-Reload,23010,Zlib error when adding sub file to xlsx file.,libxlsxwriter error
-Reload,23011,Zlib error when closing xlsx file.,libxlsxwriter error
-Reload,23012,NULL function parameter ignored.,libxlsxwriter error
-Reload,23013,"String exceeds Excel limit of 32,767 characters.",libxlsxwriter error
-Reload,23014,Parameter exceeds Excel limit of 255 characters.,libxlsxwriter error
-Reload,23015,Error finding internal string index.,libxlsxwriter error
-Reload,23016,Worksheet row or column index out of range.,libxlsxwriter error
-Reload,23017,Maximum number of worksheet URLs (65530) exceeded.,libxlsxwriter error
-Reload,24000,OK,QBDI status is ok
-Reload,24001,QBDI returned a message: {0},Not translated message from QBDI
-Reload,30000,Provided URL uses an unsupported protocol.,libcurl error
-Reload,30001,Provided proxy can not be resolved.,libcurl error
-Reload,30002,Failed to connect to host or proxy.,libcurl error
-Reload,30003,Access denied for resource in the URL.,libcurl error
-Reload,30004,FTP accept failed.,libcurl error
-Reload,30005,FTP accept timeout.,libcurl error
-Reload,30006,FTP cannot get the host.,libcurl error
-Reload,30007,File transfer did not match the expected transfer size.,libcurl error
-Reload,30008,Custom QUOTE commands failed.,libcurl error
-Reload,30009,Write failed.,libcurl error
-Reload,30010,Upload failed.,libcurl error
-Reload,30011,Memory allocation failed.,libcurl error
-Reload,30012,Operation timeout.,libcurl error
-Reload,30013,FTP REST command failed.,libcurl error
-Reload,30014,POST command failed.,libcurl error
-Reload,30015,SSL/TSL handshake failed. Certificates and/or passwords are invalid.,libcurl error
-Reload,30016,File read failed.,libcurl error
-Reload,30017,LDAP bind failed.,libcurl error
-Reload,30018,LDAP search failed,libcurl error
-Reload,30019,Failure due to too many redirects.,libcurl error
-Reload,30020,SSL certificate or SSH md5 fingerprint failed to verify.,libcurl error
-Reload,30021,Received nothing from remote server.,libcurl error
-Reload,30022,Specified crypto engine was not found.,libcurl error
-Reload,30023,Failed to set the selected SSL crypto engine.,libcurl error
-Reload,30024,Problem with the local client certificate.,libcurl error
-Reload,30025,Specified cipher can not be used.,libcurl error
-Reload,30026,Peer certificate cannot be authenticated.,libcurl error
-Reload,30027,Bad content encoding.,libcurl error
-Reload,30028,Invalid LDAP URL.,libcurl error
-Reload,30029,Requested FTP SSL level failed.,libcurl error
-Reload,30030,Initiating the SSL Engine failed.,libcurl error
-Reload,30031,Remote server login was denied.,libcurl error
-Reload,30032,File on FTP server not found.,libcurl error
-Reload,30033,Illegal TFTP operation.,libcurl error
-Reload,30034,Error occurred during SSH session.,libcurl error
-Reload,30100,"The generated set expression is too long. Reduce the length, for example by making a smaller set of selections, and regenerate the set expression.",In Qlik Sense when a generated set expression is too long
+Reload,6000,Invalid hypercube object. / Invalid hypercube object,Problems with validation inside of the hypercube
+Reload,6001,The hypercube results are too large. / Result too large,"Problems with validation inside of the hypercube and the resulting pages are too large, i.e. over 10000 results"
+Reload,6002,Invalid hypercube object state. / Invalid hypercube object state,"Problems with validation inside of the hypercube, no validation data exist for the specified object"
+Reload,6003,Not currently possible to perform the requested operation. / Function not allowed on this object in app modal mode,Thrown from hypercube when an operation is not allowed on an object because we are in modal mode for the application
+Reload,7000,All expressions are disabled / All expressions disabled,Calculation error
+Reload,7001,Dimension or measure not in library / Dimension or measure not in library,Calculation error
+Reload,7002,Out of calculation memory / Out of object memory,Calculation error
+Reload,7003,Calculation set is too large / Too many cells,Calculation error
+Reload,7004,Calculation timed out / Calculation timed out,Calculation error
+Reload,7005,The calculation condition is not fulfilled / Calculation condition unfulfilled,Displayed on visualization that has not fulfilled its calculation condition
+Reload,7006,Mixed DBMS and in-memory aggregation is not supported / Mixed DBMS and in-memory aggregation is not supported,Calculation error; DBMS stands for database management system
+Reload,7007,Direct query attempted against missing or non-direct table / Direct query attempted against missing or non-direct table,Calculation error
+Reload,7008,Invalid sort order in properties / Invalid properties sort order,"Calculation error, wrong sort order"
+Reload,7009,The calculation page is too large. Reduce the number of cells and try again. / Calculation pages too large,"Calculation error, result too large"
+Reload,7010,Semantic fields are not allowed in calculation / Semantic fields not allowed in calculation,"Calculation error, semantic fields were used"
+Reload,7011,The calculation of the object could not be performed successfully. Try refreshing the app. / The object is not in a valid data state,"The object should have been validated, but it is invalid."
+Reload,7012,The dimension is already in use. / The pivot dimensions already exist,
+Reload,7013,An object is referring to a Direct Discovery field that does not exist. Please update the definition of the object or add the missing field in the Direct Discovery table. / A direct table field is missing,"Do not translate ""Direct Discovery"""
+Reload,7014,A calculation condition is not met. The dimension has been excluded from calculation. / A calculation condition stopped the calculation,
+Reload,8000,Invalid identifier for the linked object / Invalid extends id for properties,Error on GetLayout the objects properties extends an invalid id
+Reload,8001,Linked object not found on layout / Linked object not found on layout,Error on GetLayout and a linked object to the object is not found among the objects in the app
+Reload,8002,Invalid linked object / Invalid linked object,Error on GetLayout and a linked object to the object is invalid
+Reload,9000,The object could not be saved. / Write Failed,Something went wrong while persisting an object
+Reload,9001,The object could not be read. / Read Failed,Something went wrong while reading a persisted object
+Reload,9002,The object could not be deleted. / Delete Failed,Something went wrong while deleting persisted object
+Reload,9003,The object could not be found. / Resource not found,Failed to find a specific ID related to persistance of objects
+Reload,9004,"You are using Qlik Sense Desktop instead of Qlik Sense, or you are using the wrong version of Qlik Sense. / Unsupported version",Sent out when client tries to do an unsupported action related to persistance. The user is performing an action on Qlik Sense Desktop that requires the full product. Or the user is doing something that is not supported in the current version .
+Reload,9005,The app migration failed because the app is write-protected. / Migration failed since the file was write protected,Showed in Qlik Sense when the app needs upgrade and the file on disk is write-protected.
+Reload,9006,The app migration was cancelled. Open the app again to migrate it. / Migration was aborted,Showed in Qlik Sense when the app migration was cancelled
+Reload,9007,The app migration could not back up the app. The app migration is cancelled. / Backup of original file failed when migrating,Showed in Qlik Sense when the app migration failed to backup. The migration is cancelled.
+Reload,9008,Insufficient disk space for operation / The disk is out of space,Showed in Qlik Sense when disk space has run out.
+Reload,9009,You are trying to use a method that is not supported in session apps / Unknown error,"Showed in Qlik Sense when a method that is not supported, is called on a session app"
+Reload,9510,Invalid parameter sent from the repository in the binary sync protocol / Invalid parameters to SetChunk,Do not translate. Related to Set Chunk. This error code is only used internally
+Reload,9511,Invalid parameter sent from the repository in the binary sync protocol / Invalid parameters to GetChunk,Do not translate. Related to Get Chunk. This error code is only used internally
+Reload,10000,You do not have access to the data source. / Data source access denied,Access rights problems on create new ODBC/OLEDB connection
+Reload,11000,Reload in progress. / Reload in progress,A reload request from another connection in the same session is currently being processed.
+Reload,11001,The following table could not be found: '{0}'. Correct the reference to the table and reload the script. / Table '{0}' not found,An error message for when a table named in a script cannot be found.
+Reload,11002,The following statement could not be identified: '{0}'. Correct the syntax of this statement and reload the script. / Unknown statement: {0},An error message for when the engine cannot figure out what statement type was intended due to a syntax error.
+Reload,11003,There is a syntax problem with the following script element: '{0}'.  Correct the syntax and reload the script. / Unexpected token: {0},An error message for when the engine finds a script element
+Reload,11004,"The engine expected nothing, but found the following script element: '{0}'. Correct the syntax and reload the script. / Unexpected token: '{0}'  expected nothing",An error message for when the engine finds a script element
+Reload,11005,The engine found the following script element: '{0}'. The following script element was expected: '{1}'. Correct the syntax and reload the script. / Unexpected token: '{0}' expected: '{1}',An error message for when the engine finds a script element
+Reload,11006,"The engine found the following script element: '{0}'. One of the following script elements was expected: '{1}' or  '{2}'. Correct the syntax and reload the script. / Unexpected token: '{0}' expected one of: '{1}' , '{2}'",An error message for when the engine finds a script element
+Reload,11007,"The engine found the following script element: '{0}'. One of the following script elements was expected: '{1}', '{2}', or '{3}'. Correct the syntax and reload the script. / Unexpected token: '{0}' expected one of: '{1}' , '{2}' , '{3}'",An error message for when the engine finds a script element
+Reload,11008,"The engine found the following script element: '{0}'. One of the following script elements was expected: '{1}', '{2}', '{3}', or '{4}'. Correct the syntax and reload the script. / Unexpected token: '{0}' expected one of: '{1}' , '{2}' , '{3}' , '{4}'",An error message for when the engine finds a script element
+Reload,11009,"The engine found the following script element: '{0}'. One of the following script elements was expected: '{1}', '{2}', '{3}', '{4}', or '{5}'. Correct the syntax and reload the script. / Unexpected token: '{0}' expected one of: '{1}' , '{2}' , '{3}' , '{4}' , '{5}'",An error message for when the engine finds a script element
+Reload,11010,"The engine found the following script element: '{0}'. One of the following script elements was expected: '{1}', '{2}', '{3}', '{4}', '{5}', or '{6}'. Correct the syntax and reload the script. / Unexpected token: '{0}' expected one of: '{1}' , '{2}' , '{3}' , '{4}' , '{5}' , '{6}'",An error message for when the engine finds a script element
+Reload,11011,"The engine found the following script element: '{0}'. One of the following script elements was expected: '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', or '{7}'. Correct the syntax and reload the script. / Unexpected token: '{0}' expected one of: '{1}' , '{2}',  '{3}' , '{4}' , '{5}' , '{6}' , '{7}'",An error message for when the engine finds a script element
+Reload,11012,"The engine found the following script element: '{0}'. Another script element was expected, such as: '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', or '{7}'. Correct the syntax and reload the script. / Unexpected token: '{0}' expected one of: '{1}' , '{2}' , '{3}' , '{4}' , '{5}' , '{6}' , '{7}' ...",An error message for when the engine finds a script element
+Reload,11013,The following field could not be found: '{0}'. Correct the reference to the field and reload the script. / Field '{0}' not found,An error message for when a field named in a script cannot be found.
+Reload,11014,The following mapping table could not be found: '{0}'. Correct the reference to the mapping table and reload the script. / Mapping table '{0}' not found,An error message for when a mapping table that was named in the script cannot be found.
+Reload,11015,The following connection could not be found: '{0}'. Correct the reference to the connection and reload the script. / Connection '{0}' not found,An error message for when a connection that was named in the script cannot.  From script like: LIB CONNECT TO [lib://database]
+Reload,11016,This name already exists: '{0}'. Select a different name for the rename operation and reload the script. / The name '{0}' already exists.,An error message for when the name selected for a rename operation is already in use.
+Reload,11017,The file is in an incorrect format or may be damaged. Save the file in DIF format and reload the script. / Unsupported or bad format in DIF file,An error message for when a DIF file is specified but the file it is pointing to is not in the DIF format or is too damaged to be recognized. Do not translate [DIF].
+Reload,11018,The file is in an incorrect format or may be damaged. Save the file in BIFF format and reload the script. / Unsupported or bad format in BIFF file,An error message for when a BIFF file is specified but the file it is pointing to is not in the BIFF format or is too damaged to be recognized. Do not translate [BIFF].
+Reload,11019,Cannot read an Excel file protected by passwords. Remove the password and reload the script. / Cannot read file because it is encrypted,An error message for when the excel file selected to load data from is password protected and inaccessible to Sense. Do not translate [Excel].
+Reload,11020,Cannot open the following file: '{0}'. Check to confirm that the file is available and reload the script. / Cannot open file: '{0}',"An error message for when a file is specified in a script, but cannot be opened due to the file not existing, the system not having the rights to open it, the file being already opened and locked by another program, or another cause of the file being made inaccessible."
+Reload,11021,The following autogenerate number is incorrect: '{0}'. Autogenerate numbers cannot be negative numbers or greater than 2147483647. Correct the autogenerate number and reload the script. / Invalid Autogenerate count: {0},"An error message for when the autogenerate number, that is the number of records the autogenerate statement is generating, of a LOAD statement is invalid. Typically a negative number or too large like more than 2^31. Do not translate [autogenerate]"
+Reload,11022,These LOAD statement prefixes cannot be combined. Remove the conflicting prefixes and reload. / Illegal combination of prefixes,"An error message for when a LOAD statement includes conflicting prefixes, such as JOIN and NONCONCATENATE. Do not translate [LOAD]"
+Reload,11023,The control statement does not match its corresponding start statement. Confirm that the start and end of the control statement are formatted correctly and reload. / The control statement is not correctly matched with its corresponding start statement.,"An error message for when a Control statement that has a start and end part, such as IF ... and the corresponding end if, does not have matching start and end parts."
+Reload,11024,"The following connection could not be found: {0}. Correct the reference to the connection or confirm you have access rights to this connection, and reload. / Connection not found: {0}",An error message for when the connection specified cannot be found.
+Reload,11025,The following connection is invalid: {0}.  Correct the reference to the connection and reload. / Connection {0} is invalid,An error message for when the connection specified exists but something is wrong with its definition.
+Reload,11026,The following path is outside the folder defined by the connection: '{0}'. Enter the complete path and reload the script. / The path '{0}' is outside the folder defined by the connection,"An error message for when a path is probably using .. to escape the file system root, which is not allowed."
+Reload,11027,There is no qualified path for the following file: {0}. Save your QlikView document before using qualify statements. / No qualified path for file: {0},An error message for when a path is missing a qualified path. This specific message will only come when using relative paths and the app/document is not saved
+Reload,11028,This statement only works with lib:// paths in standard mode. Change your statement to use a lib:// path and reload the script. / This statement only works with lib:// paths in this script mode,An error message for when LOAD is used with a path other than a Lib path in standard mode. Do not translate [lib://]
+Reload,11029,Inconsistent use of semantic fields. Correct the use of the semantic prefix and reload the script. / Inconsistent use of semantic fields,An error message for when semantic fields are used inconsistently. Do Not Translate [semantic].
+Reload,11030,"There is no open data connection. There may be a missing or failed CONNECT statement. Check your CONNECT statement, confirm the connection is accessible, and reload the script. / There is no open data connection.","An error message for when where is no open data connection, likely as the result of a SELECT statement missing a successful CONNECT statement before it, but also potentially because the database is unavailable or the database account is invalid. Do not translate [CONNECT]."
+Reload,11031,The GROUP BY clause requires aggregation expressions. Add aggregation expressions to the clause and reload the script. / Aggregation expressions required by GROUP BY clause.,An error message for when a GROUP BY clause is missing aggregation expressions such as SUM or COUNT. Do not translate: [GROUP BY].
+Reload,11032,CONNECT statements other than LIB CONNECT are not available in this script mode. Change the CONNECT statement to LIB CONNECT and reload the script. / CONNECTs other than LIB CONNECT are not available in this script mode.,"An error message for when a CONNECT statement is used in the incorrect script mode. Do not translate: CONNECT, LIB CONNECT. Do not translate [CONNECT, LIB CONNECT]"
+Reload,11033,ODBC connection failed. Check to see if the database is available and that it is identified correctly in the script. / ODBC connection failed,An error message for when a ODBC connection fails. Do not translate [ODBC]
+Reload,11034,OLEDB connection failed. Check to see if the database is available and that it is identified correctly in the script. / OLEDB connection failed,An error message for when a OLEDB connection fails. Do not translate [OLEDB]
+Reload,11035,Custom connection failed. Check to see if the database is available and that it is identified correctly in the script. / Custom connection failed,An error message for when a custom connection fails.
+Reload,11036,ODBC read failed. Check to see if the database is available and that it is identified correctly in the script. / ODBC read failed,An error message for when a ODBC read fails. Do not translate [ODBC]
+Reload,11037,OLEDB read failed. Check to see if the database is available and that it is identified correctly in the script. / OLEDB read failed,An error message for when a OLEDB read fails. Do not translate [OLEDB]
+Reload,11038,Custom read failed. Check to see if the database is available and that it is identified correctly in the script. / Custom read failed,An error message for when a Custom read fails.
+Reload,11039,Binary load is not allowed with the following document: {0}. / Binary Load is not allowed on: {0},An error message for when Binary LOAD is attempted on a document that has been marked as protected from Binary LOAD. It could be sensitive data and the admin disabled it. Do not translate [binary LOAD]
+Reload,11040,The following connector failed to start: {0}. The connector cannot be found or the system is missing DLLs for the connector. Contact your system administrator. / Failed to start connector: {0},An error message for when a connector fails to start. This could be from the system missing DLL for the connector or the system being unable to find the connector. Do not translate [DLL]
+Reload,11041,The connector is not responding. Contact your system administrator. / Connector is not responding,An error message for when a connector is not responding.
+Reload,11042,The connector has returned the following error: {0}. / Connector reply error: {0},An error message for when the connector failed to perform a task and returned an error
+Reload,11043,Connector connect error: {0}. / Connector connect error: {0},The CONNECT statment
+Reload,11044,Custom connector {0} was not found. / Connector {0} not found,Custom connector type is probably not supported. Only supported extensions are .exe and .dll.
+Reload,11045,Duplicate keys found when loading Input Field {0}. / Duplicate keys when loading Input Field {0},
+Reload,11046,There is no previously loaded table to perform a Concatenate LOAD with. / No previous table for concatenate load.,
+Reload,12000,There is a new version of Qlik Sense Desktop available. Please update to the new version. / New Qlik Sense Desktop version available,Showed when we have a new version of the product available
+Reload,12001,Your version of Qlik Sense Desktop has expired. / This engine has expired,Showed when the product  is outdated
+Reload,12002,"Section access information was detected. This is not supported in Qlik Sense Desktop. To be able to load data into Qlik Sense Desktop, make sure to remove any section access information using a version that supports this. / Section access detected when opening an app",Showed when Qlik Sense Desktop detects section access in the app upon load
+Reload,12003,"Because the app is open, it cannot be deleted. Please close the app and try again. / Unknown error",Showed when an already opened app is about to be deleted in Qlik Sense Desktop
+Reload,12004,User is not authenticated. Please log in to Qlik Sense Desktop. / User authentication failure,Showed when an Engine API is called before the user has authenticated in Sense Desktop
+Reload,13000,You have reached the size limitation of the export process. Please reduce the number of values to export or change the settings. / Out of memory,Shown when an export fails due to reaching the limits set in the settings.ini configuration file.
+Reload,13001,There is no data to export. Please make sure the data in your visualization is correct. / No data,Shown when an export fails due to no hypercubes found. There is no data in the visualization to export.
+Reload,14000,File with the given offset was not found. / Unknown error,Error message
+Reload,15000,The search timed out / Search timeout,"Error message. The search took too long, it timed out. "
+Reload,16000,"The Direct Discovery expression failed. There can be various causes, such as a communication error, or if the data load script contains a query that is no longer valid. / Direct Discovery expression failed",Error message. Note to translator: Do not translate [Direct Discovery].
+Reload,16001,There are too many rows to display this visualization. Please make selections so that fewer detail records are retrieved. / Direct Discovery row count overflow,Error message for Direct Discovery.
+Reload,16002,Direct query returned empty result set. / Unknown error,Error message. Note to translator: Do not translate [Direct query].
+Reload,16003,Database connection failed. / Database connection failed,Error message.
+Reload,16004,Measure fields are not allowed with aggregated fields. / Unknown error,Error message. Note to translator: Do not translate [Measure].
+Reload,16005,Detail field is not allowed with aggregated fields. / Unknown error,Error message. Note to translator: Do not translate [Detail].
+Reload,16006,Synthetic keys are  not allowed in a Direct Discovery table. A Direct Discovery table cannot be part of a loop. / Unknown error,Error message. Note to translator: Do not translate [Direct Discovery].
+Reload,16007,Only fields from a single Direct Discovery table are allowed. / Unknown error,"Error message. Note to translator: Do not translate ""Direct Discovery""."
+Reload,16008,Database authorization failed. / Unknown error,
+Reload,17000,Table not found in current app / Table not found in current App,Happens when GetAssociationScores function is called with  any one of the two tables' name that does not exist in the app
+Reload,17001,Found duplicated table names / Found duplicated table names,Happens when GetAssociationScores function is called with two table names being same
+Reload,18000,The variable must have a name. / Variable must have a name,It is mandatory to set a name when creating a variable or setting some properties to the variable
+Reload,18001,A variable with this name already exists. Please choose another name. / Variable already exists,A variable with the same name already exists. Can happen when creating a variable or setting properties to a variable
+Reload,18002,The name of the generic variable is inconsistent with the name of the underlying variable. Please remove the variable and create it again and notify Qlik Support of this error. / Variable inconsistency,Showed in Qlik Sense when a generic variable exists with a name not known by the underlying variable list
+Reload,19000,The content libraries could not be listed. Please try again and contact your system administrator if the problem persists. / Failed getting list of content libraries,"Happens when GetContentLibraries fails. In server mode, the engine did not get any answer from the repository."
+Reload,19001,The content of the library could not be retrieved. Please try again and contact your system administrator if the problem persists. / Failed getting list of library content,"Happens when GetLibraryContent fails. In server mode, the engine did not get any answer from the repository."
+Reload,19002,Error when writing app-specific content. / Media bundling failed,Happens when bundling media items fails
+Reload,19003,Error when reading app-specific content. / Media unbundling failed,Happens when unbundling media items fails
+Reload,19004,The content library you specified does not exist. Check the name of the library. / Content library not found,Happens when GetLibraryContent fails in desktop because the library doesn't exist.
+Reload,20000,Feature is disabled. / Feature disabled,
+Reload,22000,OK / OK,Maps to grpc::StatusCode::OK
+Reload,22001,The operation was cancelled. / Operation cancelled.,Maps to grpc::StatusCode::CANCELLED
+Reload,22002,Unknown error / Unknown error.,Maps to grpc::StatusCode::UNKNOWN
+Reload,22003,Client specified an invalid argument. / Invalid argument.,Maps to grpc::StatusCode::INVALID_ARGUMENT
+Reload,22004,Deadline expired before operation could complete. / Deadline exceeded.,Maps to grpc::StatusCode::DEADLINE_EXCEEDED
+Reload,22005,The requested entity (file or directory) was not found. / Resource not found.,Maps to grpc::StatusCode::STATUS_NOT_FOUND
+Reload,22006,The entity (file or directory) could not be created as it already exists. / Resource already exists.,Maps to grpc::StatusCode::ALREADY_EXISTS
+Reload,22007,The caller does not have permission to execute the specified operation. / Permission Denied.,Maps to grpc::StatusCode::PERMISSION_DENIED
+Reload,22008,"A resource has been exhausted. Examples: a per-user quota was exceeded, or the file system is out of space. / Resource exhausted.",Maps to grpc::StatusCode::RESOURCE_EXHAUSTED
+Reload,22009,Operation was rejected because the system is not in a state required for the operation's execution. / Operation rejected failed precondition.,Maps to grpc::StatusCode::FAILED_PRECONDITION
+Reload,22010,"The operation was aborted, typically due to a concurrency issue like sequencer check failures, transaction aborts, etc. / Operation aborted.",Maps to grpc::StatusCode::ABORTED
+Reload,22011,"The operation was past the valid range, for example, seeking or reading past end of the file. / Operation out of range.",Maps to grpc::StatusCode::OUT_OF_RANGE
+Reload,22012,The operation is not supported in this service. / Operation not implemented.,Maps to grpc::StatusCode::UNIMPLEMENTED
+Reload,22013,Internal error. / Internal error.,Maps to grpc::StatusCode::INTERNAL
+Reload,22014,The service is currently unavailable. You may be able to correct this by retrying and using backoff. / Service unavailable.,Maps to grpc::StatusCode::UNAVAILABLE
+Reload,22015,Unrecoverable data loss or corruption. / Unrecoverable data loss or corruption.,Maps to grpc::StatusCode::DATA_LOSS
+Reload,22016,The request does not have valid authentication credentials for the operation. / Invalid authentication.,Maps to grpc::StatusCode::UNAUTHENTICATED
+Reload,23001,Invalid xlsx object. / Invalid xlsx object.,libxlsxwriter error
+Reload,23002,Invalid xlsx file. / Invalid xlsx file.,libxlsxwriter error
+Reload,23003,Invalid xlsx sheet. / Invalid xlsx sheet.,libxlsxwriter error
+Reload,23004,Invalid xlsx export range. / Invalid xlsx export range.,libxlsxwriter error
+Reload,23005,General error when writing xlsx. / General error with xlsx writing.,libxlsxwriter error
+Reload,23006,Cannot allocate memory when writing xlsx file. / Can not allocate memory when writing xlsx file.,libxlsxwriter error
+Reload,23007,Error creating output xlsx file. This usually due to an error with permissions. / Error creating output xlsx file. Usually a permissions error.,libxlsxwriter error
+Reload,23008,Error encountered when creating a tmpfile during file assembly. / Error encountered when creating a tmpfile during file assembly.,libxlsxwriter error
+Reload,23009,Zlib error with a file operation while creating xlsx file. / Zlib error with a file operation while creating xlsx file.,libxlsxwriter error
+Reload,23010,Zlib error when adding sub file to xlsx file. / Zlib error when adding sub file to xlsx file.,libxlsxwriter error
+Reload,23011,Zlib error when closing xlsx file. / Zlib error when closing xlsx file.,libxlsxwriter error
+Reload,23012,NULL function parameter ignored. / NULL function parameter ignored.,libxlsxwriter error
+Reload,23013,"String exceeds Excel limit of 32,767 characters. / String exceeds Excel's limit of 32 767 characters.",libxlsxwriter error
+Reload,23014,Parameter exceeds Excel limit of 255 characters. / Parameter exceeds Excel's limit of 255 characters.,libxlsxwriter error
+Reload,23015,Error finding internal string index. / Error finding internal string index.,libxlsxwriter error
+Reload,23016,Worksheet row or column index out of range. / Worksheet row or column index out of range.,libxlsxwriter error
+Reload,23017,Maximum number of worksheet URLs (65530) exceeded. / Maximum number of worksheet URLs (65530) exceeded.,libxlsxwriter error
+Reload,24000,OK / OK,QBDI status is ok
+Reload,24001,QBDI returned a message: {0} / Direct Query Mode error,Not translated message from QBDI
+Reload,30000,Provided URL uses an unsupported protocol. / Provided URL use an unsupported protocol,libcurl error
+Reload,30001,Provided proxy can not be resolved. / Provided proxy can not be resolved,libcurl error
+Reload,30002,Failed to connect to host or proxy. / Failed to connect to host or proxy,libcurl error
+Reload,30003,Access denied for resource in the URL. / Access denied for resource in the URL,libcurl error
+Reload,30004,FTP accept failed. / FTP accept failed,libcurl error
+Reload,30005,FTP accept timeout. / FTP accept timeout,libcurl error
+Reload,30006,FTP cannot get the host. / FTP can not get the host,libcurl error
+Reload,30007,File transfer did not match the expected transfer size. / File transfer did not match the expected transfer size,libcurl error
+Reload,30008,Custom QUOTE commands failed. / Custom QUOTE commands failed,libcurl error
+Reload,30009,Write failed. / Write failed,libcurl error
+Reload,30010,Upload failed. / Upload failed,libcurl error
+Reload,30011,Memory allocation failed. / Memory allocation failed,libcurl error
+Reload,30012,Operation timeout. / Operation timeout,libcurl error
+Reload,30013,FTP REST command failed. / FTP REST command failed,libcurl error
+Reload,30014,POST command failed. / POST command failed,libcurl error
+Reload,30015,SSL/TSL handshake failed. Certificates and/or passwords are invalid. / SSL/TSL handshake failed. Certificates and/or passwords are invalid,libcurl error
+Reload,30016,File read failed. / File read failed,libcurl error
+Reload,30017,LDAP bind failed. / LDAP bind failed,libcurl error
+Reload,30018,LDAP search failed / LDAP search failed,libcurl error
+Reload,30019,Failure due to too many redirects. / Failure due to too many redirects,libcurl error
+Reload,30020,SSL certificate or SSH md5 fingerprint failed to verify. / SSL certificate or SSH md5 fingerprint failed to verify,libcurl error
+Reload,30021,Received nothing from remote server. / Got nothing from remote server,libcurl error
+Reload,30022,Specified crypto engine was not found. / Specified crypto engine not found,libcurl error
+Reload,30023,Failed to set the selected SSL crypto engine. / Failed to set the selected SSL crypto engine,libcurl error
+Reload,30024,Problem with the local client certificate. / Problem with the local client certificate,libcurl error
+Reload,30025,Specified cipher can not be used. / Specified cipher can not be used,libcurl error
+Reload,30026,Peer certificate cannot be authenticated. / Peer certificate cannot be authenticated,libcurl error
+Reload,30027,Bad content encoding. / Bad content encoding,libcurl error
+Reload,30028,Invalid LDAP URL. / Invalid LDAP URL,libcurl error
+Reload,30029,Requested FTP SSL level failed. / Requested FTP SSL level failed,libcurl error
+Reload,30030,Initiating the SSL Engine failed. / Initiating the SSL Engine failed,libcurl error
+Reload,30031,Remote server login was denied. / Remote server login denied,libcurl error
+Reload,30032,File on FTP server not found. / File on FTP server not found,libcurl error
+Reload,30033,Illegal TFTP operation. / Illegal TFTP operation,libcurl error
+Reload,30034,Error occurred during SSH session. / Error occurred during SSH session,libcurl error
+Reload,30100,"The generated set expression is too long. Reduce the length, for example by making a smaller set of selections, and regenerate the set expression. / Set analysis expression too large",In Qlik Sense when a generated set expression is too long
 Reload,61409,Authentication failed. The user was not found in the database.,
 Reload progress,0,{0},"Empty message, showing parameters {0};"
 Reload progress,1,Saving state and data,"Showed in the script editor progress dialog, saving state and data; "
@@ -291,7 +291,7 @@ Reload progress,5,Connected,Showed in the script editor progress dialog; Connect
 Reload progress,6,Connecting to {0},Showed in the script editor progress dialog; Connecting to:
 Reload progress,7,Failed to connect,Showed in the script editor progress dialog; Failed to connect
 Reload progress,8,(QVD (row-based) optimized),Showed in the script editor progress dialog; old QVD
-Reload progress,9,(QVD columnar optimized),Showed in the script editor progress dialog; 
+Reload progress,9,(QVD columnar optimized),Showed in the script editor progress dialog;
 Reload progress,10,Script error: {0},Showed in the script editor progress dialog; Script error; showing error {0}
 Reload progress,11,Done,Showed in the script editor progress dialog; Done
 Reload progress,12,,Showed in the script editor progress dialog; empty message
@@ -313,3 +313,53 @@ Reload progress,27,Canceled creation of search index. Smart Search might be slow
 Reload progress,28,The search index is incomplete: timed out. Smart Search might be slower than expected.,Shown in the data load editor progress dialog when search index creation timed out.
 Reload progress,29,The search index is incomplete: not enough memory. Smart Search might be slower than expected.,Shown in the data load editor progress dialog when search index creation has gone out of the memory limit.
 Reload progress,30,Access was denied after reload. Check that the user that reloads the script is included in the section access part of the script.,Shown in the data load editor progress dialog when the reloading user looses access to the app after reload.
+Extra,422,Unprocessable Entity
+Extra,423,Unknown error
+Extra,429,Too Many Requests
+Extra,1015,Static App size exceeded
+Extra,1016,Direct Query mode not supported
+Extra,1017,Unknown error
+Extra,1018,App event source timeout
+Extra,2005,Connection is missing credentials
+Extra,9010,Unknown error
+Extra,9011,Object locked
+Extra,9012,Encryption key migration ongoing
+Extra,11047,Unsupported or bad format in QVD file
+Extra,11048,Action is blocked due to that an entitlement quota limit has been reached.
+Extra,21000,Too many fields in file
+Extra,21001,Too many tables in file
+Extra,33000,Unknown error
+Extra,33001,Unknown error
+Extra,33002,Unknown error
+Extra,33003,Unknown error
+Extra,33004,Unknown error
+Extra,33005,Unknown error
+Extra,33006,Unknown error
+Extra,33007,Unknown error
+Extra,25000,Invalid trendline def
+Extra,25001,Math error
+Extra,30101,Merge Load error: {0}
+Extra,30200,The FTP operation was not completed because the session was aborted
+Extra,30201,Passive mode is not available on the server
+Extra,30210,The server did not return any headers
+Extra,30211,The server response could not be parsed
+Extra,30212,The redirection requires user confirmation
+Extra,30220,The function needs to redo the request
+Extra,30221,The attempt to connect to the server failed
+Extra,30222,The connection with the server has been terminated
+Extra,30223,The connection with the server has been reset
+Extra,30224,The Internet connection has been lost
+Extra,30225,The format of the request is invalid
+Extra,30226,The function is unfamiliar with the Certificate Authority that generated the server's certificate
+Extra,30227,The requested operation is invalid
+Extra,30228,The URL is invalid
+Extra,30229,The requested ite could not be located
+Extra,30230,The request to connect and log on to an FTP server failed
+Extra,30231,The server name could not be resolved
+Extra,30232,A user interface or other blocking operation has been requested
+Extra,30233,SSL certificate common name(host name field) is incorrect. For example  if you entered www.server.com  and the common name on the certificate says www.different.com
+Extra,30234,SSL certificate date that was received from the server is invalid. The certificate has expired
+Extra,30235,The SSL certificate contains errors
+Extra,30236,The SSL certificate is invalid
+Extra,30237,The website or server indicated is unreachable
+Extra,31000,Unknown error
